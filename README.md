@@ -21,11 +21,6 @@
 **10.31**
 
 1. 确定具体功能（具体功能分析见[功能分析.pdf](D:\Wechat-appointment-mini-program))
-
-   ```html
-   <iframe src="https://docs.google.com/gview?embedded=true&url=https://github.com/hudadaya/Wechat-appointment-mini-program/blob/main/%E5%8A%9F%E8%83%BD%E5%88%86%E6%9E%90.pdf style="width:800px; height:500px;" frameborder="0"></iframe>
-   ```
-
 2. 决定先尝试做研讨室预约模块
 
 
