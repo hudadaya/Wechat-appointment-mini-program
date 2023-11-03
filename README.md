@@ -21,6 +21,11 @@
 **10.31**
 
 1. 确定具体功能（具体功能分析见[功能分析.pdf](D:\Wechat-appointment-mini-program))
+
+   ```html
+   <iframe src="https://docs.google.com/gview?embedded=true&url=https://github.com/hudadaya/Wechat-appointment-mini-program/blob/main/%E5%8A%9F%E8%83%BD%E5%88%86%E6%9E%90.pdf style="width:800px; height:500px;" frameborder="0"></iframe>
+   ```
+
 2. 决定先尝试做研讨室预约模块
 
 
@@ -29,7 +34,8 @@
 
 1. 学习小程序制作
 2. UI完成时间（张雨馨，张文秀）
-3. 文档大框ddl，完成前三章的写作（具体每部分的分工见[报告模板.docx](D:\Wechat-appointment-mini-program))
+3. 文档大框ddl，完成前三章的写作（具体每部分的分工见[报告模板.pdf](D:\Wechat-appointment-mini-program))
    1. 引言
    2. 详细设计
    3. 概要设计
+
