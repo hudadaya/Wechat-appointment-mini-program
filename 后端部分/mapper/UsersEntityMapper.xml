@@ -14,7 +14,7 @@
     <result column="usersalt" jdbcType="VARCHAR" property="usersalt" />
   </resultMap>
   <select id="selectByUserName" resultType="com.example.demo.demos.web.entity.UsersEntity" resultMap="BaseResultMap">
-    select password,usersalt from users where username=#{username}
+    select password,usersalt from users where binary username=#{username}
   </select>
 
 </mapper>
