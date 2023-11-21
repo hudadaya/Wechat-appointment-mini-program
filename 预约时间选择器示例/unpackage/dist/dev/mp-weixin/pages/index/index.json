@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "时间预约选择器",
+  "usingComponents": {
+    "times": "/components/pretty-times/pretty-times"
+  }
+}

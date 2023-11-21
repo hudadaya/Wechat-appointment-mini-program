@@ -1,0 +1,1 @@
+<view><times vue-id="8dd740cc-1" isMultiple="{{true}}" timeInterval="{{1}}" isQuantum="{{true}}" disableTimeSlot="{{disableTimeSlot}}" data-event-opts="{{[['^change',[['getTime']]]]}}" bind:change="__e" bind:__l="__l"></times></view>
