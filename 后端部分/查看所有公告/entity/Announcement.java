@@ -15,8 +15,8 @@ public class Announcement {
     private Integer annountmentId;
     private String title;
     private String content;
-    private Integer createUserId;
-    private Integer updateUserId;
+    private String createUserId;
+    private String updateUserId;
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
 }
