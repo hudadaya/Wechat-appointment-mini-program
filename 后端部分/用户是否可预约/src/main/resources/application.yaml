@@ -2,7 +2,7 @@ person:
   name: Leo_Liu
   age: 18
 server:
-  port: 8081
+  port: 8085
 # datasource
 spring:
   datasource:
