@@ -40,12 +40,12 @@ public class SeminarBooking implements Serializable {
     /**
      * 
      */
-    private Integer startTime;
+    private String startTime;
 
     /**
      * 
      */
-    private Integer endTime;
+    private String endTime;
 
     /**
      * 
