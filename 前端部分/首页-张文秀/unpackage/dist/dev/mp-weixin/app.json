@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "软件工程",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#EFEFEF"
+  },
+  "usingComponents": {}
+}
