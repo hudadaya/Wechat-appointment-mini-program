@@ -9477,9 +9477,9 @@ internalMixin(Vue);
 
 /***/ }),
 /* 26 */
-/*!***************************************************************************!*\
-  !*** D:/GitHub/Wechat-appointment-mini-program/前端部分/预约时间选择-胡茵/pages.json ***!
-  \***************************************************************************/
+/*!**************************************!*\
+  !*** E:/软件工程汇报/预约时间选择-胡茵/pages.json ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9634,9 +9634,9 @@ function normalizeComponent (
 /* 42 */,
 /* 43 */,
 /* 44 */
-/*!*****************************************************************************************!*\
-  !*** D:/GitHub/Wechat-appointment-mini-program/前端部分/预约时间选择-胡茵/components/utils/date.js ***!
-  \*****************************************************************************************/
+/*!****************************************************!*\
+  !*** E:/软件工程汇报/预约时间选择-胡茵/components/utils/date.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9779,14 +9779,12 @@ function initTime() {
   var time = [];
   var intervals = [{
     start: 8,
-    end: 11
-  }, {
-    start: 13,
-    end: 16
-  }, {
-    start: 18,
-    end: 21
-  }];
+    end: 22
+  }
+  // { start: 13, end: 16 },
+  // { start: 16, end: 22 }
+  ];
+
   intervals.forEach(function (interval) {
     var start = interval.start,
       end = interval.end;

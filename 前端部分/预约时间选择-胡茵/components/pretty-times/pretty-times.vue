@@ -15,7 +15,7 @@
 
 			<!-- 时间选项 -->
 			<view style="height: 700rpx;width:100%; overflow: auto;">
-				<view class="time-box" v-if="!isSection || isQuantum" scroll-y>
+				<view class="time-box" v-if="!isSection || isQuantum">
 					<template v-for="(item,_index) in timeArr">
 						<view class="item" :key="_index">
 							<view class="item-box" :class="{'disable':item.disable,

@@ -119,9 +119,9 @@ export function initTime(startTime = '10:00:00', endTime = '21:00:00', timeInter
 	//   return time;
 	const time = [];
   const intervals = [
-    { start: 8, end: 11 },
-    { start: 13, end: 16 },
-    { start: 18, end: 21 }
+    { start: 8, end: 22 },
+    // { start: 13, end: 16 },
+    // { start: 16, end: 22 }
   ];
 
   intervals.forEach(interval => {
