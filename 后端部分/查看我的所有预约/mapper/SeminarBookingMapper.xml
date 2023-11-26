@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.demo.demos.web.mapper.SeminarBookingMapper">
 
-    <resultMap id="BaseResultMap" type="com.example.demo.demos.web.entity.SeminarBooking">
+    <resultMap id="SeminarBookingMap" type="com.example.demo.demos.web.entity.SeminarBooking">
             <id property="seminarBookId" column="seminar_book_id" jdbcType="INTEGER"/>
             <result property="seminarUserId" column="seminar_user_id" jdbcType="VARCHAR"/>
             <result property="seminarRoomNumber" column="seminar_room_number" jdbcType="INTEGER"/>
@@ -17,9 +17,7 @@
 <!--            <result property="updateUserId" column="update_user_id" jdbcType="INTEGER"/>-->
     </resultMap>
     <select id="getAllBySeminarUserId" resultType="com.example.demo.demos.web.entity.SeminarBooking"
-            resultMap="BaseResultMap">
-        select * from seminar_booking where seminar_user_id = #{seminarUserId}
+            resultMap="SeminarBookingMap">
+        select * from seminar_booking where BINARY seminar_user_id = #{seminarUserId}
     </select>
-
-
 </mapper>
