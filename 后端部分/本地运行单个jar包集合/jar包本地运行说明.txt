@@ -1,0 +1,17 @@
+【如何本地运行jar包】
+在“本地运行单个jar包集合”文件夹打开cmd
+输入：java -jar demoxxx.jar
+demoxxx.jar是要运行的jar包名称
+
+本地测试：localhost
+端口：8082
+用户登录POST：/login?username={用户名}&password={密码}
+查询用户预约记录GET：/seminar/appointments/{用户名}
+查询所有公告GET：/notice
+删除预约记录GET：/seminar/cancel?username={用户名}&room={房间号}&date={年-月-日}
+
+【‘本地运行单个jar包集合’文件夹内容说明】
+demoAllBooking.jar 查询所有预约记录接口
+demoDelete.jar 删除预约记录
+demoNotice.jar 查询所有公告
+demoUserLogin.jar 用户登录 
