@@ -8,7 +8,7 @@ demoxxx.jar是要运行的jar包名称
 用户登录POST：/login?username={用户名}&password={密码}
 查询用户预约记录GET：/seminar/appointments/{用户名}
 查询所有公告GET：/notice
-删除预约记录GET：/seminar/cancel?username={用户名}&room={房间号}&date={年-月-日}
+删除预约记录GET：/seminar/appointments?username={用户名}&room={房间号}&date={年-月-日}
 是否可以预约 POST：/seminar/appointments
 	需要前端传入一个json参数，例子如下：
 	{
