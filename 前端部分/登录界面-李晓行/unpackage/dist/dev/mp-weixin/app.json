@@ -1,8 +1,6 @@
 {
   "pages": [
-    "pages/login/login",
-    "pages/list/list",
-    "pages/index/index"
+    "pages/login/login"
   ],
   "subPackages": [],
   "window": {

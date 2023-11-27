@@ -90,31 +90,58 @@ export function initTime(startTime = '10:00:00', endTime = '21:00:00', timeInter
 	// 	if (isQuantum && num >= count) return time
 	// }
 	// return time
-	 const time = [];
+	//  const time = [];
 	  
-	  // 添加早上8点到11点的时间段
-	  for (let i = 8; i <= 11; i++) {
-	    time.push({
-	      time: `${strFormat(i)}:00:00`,
-	      disable: false
-	    });
-	  }
+	//   // 添加早上8点到11点的时间段
+	//   for (let i = 8; i <= 11; i++) {
+	//     time.push({
+	//       time: `${strFormat(i)}:00:00`,
+	//       disable: false
+	//     });
+	//   }
 	
-	  // 添加中午1点到下午4点的时间段
-	  for (let i = 13; i <= 16; i++) {
-	    time.push({
-	      time: `${strFormat(i)}:00:00`,
-	      disable: false
-	    });
-	  }
+	//   // 添加中午1点到下午4点的时间段
+	//   for (let i = 13; i <= 16; i++) {
+	//     time.push({
+	//       time: `${strFormat(i)}:00:00`,
+	//       disable: false
+	//     });
+	//   }
 	
-	  // 添加晚上6点到9点的时间段
-	  for (let i = 18; i <= 21; i++) {
-	    time.push({
-	      time: `${strFormat(i)}:00:00`,
-	      disable: false
-	    });
-	  }
+	//   // 添加晚上6点到9点的时间段
+	//   for (let i = 18; i <= 21; i++) {
+	//     time.push({
+	//       time: `${strFormat(i)}:00:00`,
+	//       disable: false
+	//     });
+	//   }
 	
+	//   return time;
+	const time = [];
+  const intervals = [
+    { start: 8, end: 22 },
+    // { start: 13, end: 16 },
+    // { start: 16, end: 22 }
+  ];
+
+  intervals.forEach(interval => {
+    const { start, end } = interval;
+
+    for (let hour = start; hour <= end; hour++) {
+      for (let minute = 0; minute < 60; minute += 30) {
+		  if(hour==end&&minute==30){
+			  continue;
+		  }
+        const hourFormatted = hour < 10 ? `0${hour}` : `${hour}`;
+        const minuteFormatted = minute === 0 ? '00' : `${minute}`;
+        const timeString = `${hourFormatted}:${minuteFormatted}:00`;
+
+        time.push({
+          time: timeString,
+          disable: false
+        });
+      }
+    }
+  });
 	  return time;
 }

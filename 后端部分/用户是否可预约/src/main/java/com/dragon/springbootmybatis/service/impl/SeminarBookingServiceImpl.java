@@ -47,6 +47,10 @@ public class SeminarBookingServiceImpl extends ServiceImpl<SeminarBookingMapper,
             return "开始时间不可大于结束时间";
         }
         // 第四个拒绝的条件
+        if(seminarBooking.getEndTimeId() + 1 - seminarBooking.getStartTimeId() > 4) {
+            return "预约时间不可大于两小时";
+        }
+        // 第五个拒绝的条件
         if(seminarBookingMapper.ifConflict(seminarBooking.getStartTimeId(), seminarBooking.getEndTimeId(),
                 date, seminarBooking.getSeminarRoomNumber()) != 0) {
             return "时间与已有预约冲突，请重新选择";

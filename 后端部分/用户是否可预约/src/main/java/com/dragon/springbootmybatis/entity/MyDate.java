@@ -16,7 +16,7 @@ public class MyDate {
     public static Date dateId2Date(int dateId) {
         // 定义起始时间和结束时间
         LocalTime startTime = LocalTime.of(8, 0); // 早上8点
-        LocalTime endTime = LocalTime.of(20, 0); // 晚上8点
+        LocalTime endTime = LocalTime.of(22, 0); // 晚上8点
 
         // 定义时间间隔为30分钟
         int intervalMinutes = 30;
@@ -31,11 +31,11 @@ public class MyDate {
         LocalTime currentTime = startTime;
         while (currentTime.isBefore(endTime) || currentTime.equals(endTime)) {
             // 排除12点到13点的时间段
-            if (!(currentTime.equals(LocalTime.of(11, 30)) || currentTime.equals(LocalTime.of(12, 00)) || currentTime.equals(LocalTime.of(12, 30)))) {
-                // 处理当前时间点
-                String formattedTime = currentTime.format(formatter);
-                timePoints.add(formattedTime);
-            }
+//            if (!(currentTime.equals(LocalTime.of(11, 30)) || currentTime.equals(LocalTime.of(12, 00)) || currentTime.equals(LocalTime.of(12, 30)))) {
+//                // 处理当前时间点
+//                String formattedTime = currentTime.format(formatter);
+//                timePoints.add(formattedTime);
+//            }
 
             // 增加时间间隔
             currentTime = currentTime.plusMinutes(intervalMinutes);
