@@ -1,6 +1,6 @@
-每一个写好的单独jar包放在“后端单独jar包”,文件夹中，总的jar在外面。
+每一个写好的单独jar包放在“本地运行单个jar包集合”,文件夹中，总的jar在外面。
 运行jar 包命令：java -jar xxx.jar
 
 xxx.jar为具体jar包名字。
 
-登陆jar包为：
+整合了所有接口的jar包为：demo-0.0.1-SNAPSHOT.jar
