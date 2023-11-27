@@ -1,0 +1,12 @@
+/* pages/list/list.wxss */
+.list-head{
+	text-align: center;
+	font-size: 32rpx;
+}
+.list_title{
+	position: relative;
+	background-color: wheat;
+	left: 10rpm;
+	padding-inline-start: 80rpm;
+	height: 80rpm;
+}

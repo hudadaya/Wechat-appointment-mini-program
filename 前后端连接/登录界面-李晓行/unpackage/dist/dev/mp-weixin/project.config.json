@@ -18,12 +18,12 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "3.1.5",
+  "libVersion": "3.2.2",
   "appid": "touristappid",
   "projectname": "demo1",
   "condition": {},
   "editorSetting": {
-    "tabIndent": "insertSpaces",
+    "tabIndent": "auto",
     "tabSize": 2
   }
 }
