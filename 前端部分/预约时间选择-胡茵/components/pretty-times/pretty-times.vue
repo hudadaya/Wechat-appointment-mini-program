@@ -14,21 +14,24 @@
 			</scroll-view>
 
 			<!-- 时间选项 -->
-			<view class="time-box" v-if="!isSection || isQuantum">
-				<template v-for="(item,_index) in timeArr">
-					<view class="item" :key="_index">
-						<view class="item-box" :class="{'disable':item.disable,
-						'active':isMultiple?item.isActive:_index==timeActive}" :style="{color:isMultiple?item.isActive? selectedItemColor:'#333'
-						 :_index==timeActive?selectedItemColor:'#333'}" @click="selectTimeEvent(_index,item)">
-							<text v-if="isQuantum">{{item.begin}}~{{item.end}}</text>
-							<text v-else>{{item.time}}</text>
-							<text class="all">{{item.disable?disableText:undisableText}}</text>
+			<view style="height: 700rpx;width:100%; overflow: auto;">
+				<view class="time-box" v-if="!isSection || isQuantum">
+					<template v-for="(item,_index) in timeArr">
+						<view class="item" :key="_index">
+							<view class="item-box" :class="{'disable':item.disable,
+							'active':isMultiple?item.isActive:_index==timeActive}" :style="{color:isMultiple?item.isActive? selectedItemColor:'#333'
+							 :_index==timeActive?selectedItemColor:'#333'}" @click="selectTimeEvent(_index,item)">
+								<text v-if="isQuantum">{{item.begin}}~{{item.end}}</text>
+								<text v-else>{{item.time}}</text>
+								<text class="all">{{item.disable?disableText:undisableText}}</text>
+							</view>
 						</view>
-					</view>
-				</template>
+					</template>
+				</view>
 			</view>
+
 			<!-- 预约时间段 -->
-			<view class="time-box" v-else>
+<!-- 			<view class="time-box" v-else>
 				<template v-for="(item,_index) in timeArr">
 					<view class="item" :key="_index">
 						<view class="item-box" :class="{'disable':item.disable || item.isInclude,
@@ -40,7 +43,7 @@
 						</view>
 					</view>
 				</template>
-			</view>
+			</view> -->
 		</view>
 <!-- 		<view class="bottom">
 			<view class="show-time" v-if="!isMultiple && !isSection && !isQuantum">

@@ -4,12 +4,12 @@
 		<!-- <times @change="getTime" :isMultiple="true" :timeInterval="1" :isQuantum="true" :disableTimeSlot="disableTimeSlot"></times> -->
 		
 		<!-- 多选时间的配置 -->
-		<!-- <times @change="getTime" :timeInterval="1" :appointTime="appointTime"
-		:isMultiple="true" :disableTimeSlot = "disableTimeSlot"></times> -->
+		<times @change="getTime" :timeInterval="1" :appointTime="appointTime"
+		:isMultiple="true" :disableTimeSlot = "disableTimeSlot"></times>
 		
 		<!-- 单选的配置 -->
-		<times @change="getTime" :timeInterval="1" :appointTime="appointTime"
-		:isMultiple="false" :disableTimeSlot = "disableTimeSlot"></times>
+<!-- 		<times @change="getTime" :timeInterval="1" :appointTime="appointTime"
+		:isMultiple="false" :disableTimeSlot = "disableTimeSlot"></times> -->
 		
 		<!-- 预约时间段 -->
 		<!-- <times @change="getTime" :timeInterval="1" :appointTime="appointTime"

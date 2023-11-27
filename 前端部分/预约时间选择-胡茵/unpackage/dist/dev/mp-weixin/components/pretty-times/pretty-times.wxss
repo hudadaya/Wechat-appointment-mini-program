@@ -85,6 +85,8 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
+  height: 100%;
+  width: 100%;
 }
 .container .time-box .item.data-v-207f01e4 {
   width: 25%;
