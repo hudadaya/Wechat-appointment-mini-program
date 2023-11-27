@@ -3,4 +3,4 @@
 
 xxx.jar为具体jar包名字。
 
-整合了所有接口的jar包为：demo-0.0.1-SNAPSHOT.jar
+整合了所有接口的jar包为：demo.jar
