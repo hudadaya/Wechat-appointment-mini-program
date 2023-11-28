@@ -6,11 +6,18 @@
 		
 		</view>
 		<view class="chat-box">
-			<label for="announcement" class="textarea-label">
-				<textarea name="公告内容" id="announcement" cols="30" rows="10"></textarea>
-				<span class="placeholder">公告</span>
-			</label>
+			<view class="ann">
+				<view class="createtime">2023-10-25 16:24:59</view>
+				<view class="title">公告标题</view>
+				<view class="content"> 1. 在规定时间内签到 2. xxx</view>	
+			</view>
+			<view class="ann">
+				<view class="createtime">2023-10-25 16:24:59</view>
+				<view class="title">公告标题</view>
+				<view class="content"> 1. 在规定时间内签到 2. xxx</view>	
+			</view>
 		</view>
+		
 		<!-- 留言 -->	
 	    <view class="chat-input">
 	    	<view class="message-box">
@@ -18,79 +25,23 @@
 	    		<button class="send-button">发送</button>
 				<!-- 组件<icon :type="success" size="26"></icon> -->
 	    	</view>
-			<view class="uni-padding-wrap" style="height: calc(100% - 180rpx); ">
-			            <view class="uni-comment" style="overflow-y: auto;">
-			                <view class="uni-comment-list">
-			                    <view class="uni-comment-face">
-									<image src="../../static/logo.png" mode="widthFix"></image>
-			                    </view>
-			                    <view class="uni-comment-body">
-			                        <view class="uni-comment-top">
-			                            <text>网友</text>
-			                        </view>
-			                        <view class="uni-comment-content">很酷的HBuilderX和uni-app，开发一次既能生成小程序，又能生成App</view>
-			                    </view>
-			                </view>
-			                <view class="uni-comment-list">
-			                    <view class="uni-comment-face">
-			                       <image src="../../static/logo.png" mode="widthFix"></image>
-			                    </view>
-			                    <view class="uni-comment-body">
-			                        <view class="uni-comment-top">
-			                            <text>马克一天</text>
-			                        </view>
-			                        <view class="uni-comment-content">很强大，厉害了我的uni-app!</view>
-			                    </view>
-			                </view>
-			                <view class="uni-comment-list">
-			                    <view class="uni-comment-face">
-			                      <image src="../../static/logo.png" mode="widthFix"></image>
-			                    </view>
-			                    <view class="uni-comment-body">
-			                        <view class="uni-comment-top">
-			                            <text>今生缘</text>
-			                        </view>
-			                        <view class="uni-comment-content">好牛逼的感觉，是不是小程序、App、移动端都互通了？</view>
-			                        </view>
-			                    </view>
-			                </view>
-			                <view class="uni-comment-list">
-			                    <view class="uni-comment-face">
-			                      <image src="../../static/logo.png" mode="widthFix"></image>
-			                    </view>
-								<view class="uni-comment-body">
-								    <view class="uni-comment-top">
-								        <text>小猫咪</text>
-								    </view>
-								    <view class="uni-comment-content">支持国产，支持DCloud!</view>
-								</view>
-							</view>
-							<view class="uni-comment-list">
-							    <view class="uni-comment-face">
-							      <image src="../../static/logo.png" mode="widthFix"></image>
-							    </view>
-								<view class="uni-comment-body">
-								    <view class="uni-comment-top">
-								        <text>小猫咪</text>
-								    </view>
-								    <view class="uni-comment-content">支持国产，支持DCloud!</view>
-								</view>
-							</view>
-							<view class="uni-comment-list">
-							    <view class="uni-comment-face">
-							       <image src="../../static/logo.png" mode="widthFix"></image>
-							    </view>
-								<view class="uni-comment-body">
-								    <view class="uni-comment-top">
-								        <text>小猫咪</text>
-								    </view>
-								    <view class="uni-comment-content">支持国产，支持DCloud!</view>
-								</view>
-							</view>
-								</view>
-			                </view>
+			<view class="uni-padding-wrap" style="height: calc(100% - 180rpx);">
+			        <view class="uni-comment" style="overflow-y: auto;">
+			          <view class="uni-comment-list" v-for="(comment, index) in comments" :key="index">
+			            <view class="uni-comment-face">
+			              <image :src="comment.img" mode="widthFix"></image>
 			            </view>
+			            <view class="uni-comment-body">
+			              <view class="uni-comment-top">
+			                <text>{{ comment.name }}</text>
+			              </view>
+			              <view class="uni-comment-content">{{ comment.comment }}</view>
+			            </view>
+			          </view>
 			        </view>
+			      </view>
+			            </view>
+			 </view>
 	    </view>
 		
 
@@ -98,9 +49,59 @@
 </template>
 
 <script>
-	export default {
-		
-	}
+export default {
+  data() {
+    return {
+		// 用户留言部分
+      comments: [
+        {
+          img: "../../static/logo.png",
+          name: "网友",
+          comment: "很酷的HBuilderX和uni-app，开发一次既能生成小程序，又能生成App",
+        },
+        {
+          img: "../../static/logo.png",
+          name: "马克一天",
+          comment: "很强大，厉害了我的uni-app!",
+        },
+		{
+		  img: "../../static/logo.png",
+		  name: "马克一天",
+		  comment: "很强大，厉害了我的uni-app!",
+		},
+		{
+		  img: "../../static/logo.png",
+		  name: "马克一天",
+		  comment: "很强大，厉害了我的uni-app!",
+		},
+		{
+		  img: "../../static/logo.png",
+		  name: "马克一天",
+		  comment: "很强大，厉害了我的uni-app!",
+		},
+		{
+		  img: "../../static/logo.png",
+		  name: "马克一天",
+		  comment: "很强大，厉害了我的uni-app!",
+		},
+		{
+		  img: "../../static/logo.png",
+		  name: "马克一天",
+		  comment: "很强大，厉害了我的uni-app!",
+		},
+		{
+		  img: "../../static/logo.png",
+		  name: "马克一天",
+		  comment: "很强大，厉害了我的uni-app!",
+		},
+        // 其他评论按照相同的格式添加
+      ],
+    };
+	
+	//公告接口
+	
+  },
+};
 </script>
 
 <style lang="scss">
@@ -130,33 +131,12 @@
 	background-color: #fcfcfc;
 	border: 1px solid #ccc;
 	left: 38px;
-	text-align: center;
+	padding-left: 15rpx;
+	// text-align: center;
 }
 
-.chat-container .chat-box .textarea-label {
-    position: relative;
-    width: 100%;
-}
 
-.chat-container .chat-box textarea {
-    width: 100%;
-    height: 100%;
-    resize: none; 
-    border: none; 
-    font-size: 16px; 
-}
 
-.chat-container .chat-box .placeholder {
-    position: absolute;
-	padding-top: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #999; 
-    writing-mode: horizontal-tb; 
-    white-space: nowrap; 
-    pointer-events: none; 
-}
 
 .chat-container .chat-box textarea:focus + .placeholder {
     display: none; /* Hide the placeholder when the textarea is focused */
@@ -174,7 +154,23 @@
 	bottom: 25.37%;
 	background-color: #f5f8f8;
 	overflow: hidden;
-    
+}
+
+
+.chat-container .ann .createtime,
+.chat-container .ann .title,
+.chat-container .ann .content {
+  font-size: 14px; /* 将字体大小调整为你想要的大小 */
+  width: 100%;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.chat-container .ann .title {
+  color: blue; /* 设置标题颜色为蓝色 */
+}
+.chat-container .ann .content{
+	padding-bottom: 10px;
 }
 
 .chat-container .chat-input .message-box {
