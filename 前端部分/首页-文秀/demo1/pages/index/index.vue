@@ -1,3 +1,4 @@
+<!-- 增加头像 -->	
 <template>
 	<!-- 不能写两个盒子 -->
 	<view class="chat-container">
@@ -18,40 +19,80 @@
 	    		<button class="send-button">发送</button>
 				<!-- 组件<icon :type="success" size="26"></icon> -->
 	    	</view>
-			<view class="fetched-messages">
-			          <!-- Messages fetched from backend will be displayed here -->
-			          <!-- Example message structure -->
-			       <view class="message">
-			           <ul>
-						   <li>
-							   <span class="user-id">用户id</span>
-							   <p>留言内容</p>
-						   </li>
-						   <li>
-							   <span class="user-id">用户id</span>
-							   <p>留言内容</p>
-						   </li>
-						   <li>
-						   		<span class="user-id">用户id</span>
-						   		<p>留言内容</p>
-						   </li>
-						   <li>
-						   		<span class="user-id">用户id</span>
-						   		<p>留言内容</p>
-						   </li>
-						   <li>
-						   		<span class="user-id">用户id</span>
-						   		<p>留言内容</p>
-						   </li>
-						   <li>
-						   		<span class="user-id">用户id</span>
-						   		<p>留言内容</p>
-						   </li>
-					   </ul>
-			       </view>
-
-          <!-- Repeat this structure for each fetched message -->
-			</view>
+			<view class="uni-padding-wrap" style="height: calc(100% - 180rpx); ">
+				<!-- 应在这里渲染 -->
+			            <view class="uni-comment" style="overflow-y: auto;">
+			                <view class="uni-comment-list">
+			                    <view class="uni-comment-face">
+									<image src="../../static/logo.png" mode="widthFix"></image>
+			                    </view>
+			                    <view class="uni-comment-body">
+			                        <view class="uni-comment-top">
+			                            <text>网友</text>
+			                        </view>
+			                        <view class="uni-comment-content">很酷的HBuilderX和uni-app，开发一次既能生成小程序，又能生成App</view>
+			                    </view>
+			                </view>
+			                <view class="uni-comment-list">
+			                    <view class="uni-comment-face">
+			                       <image src="../../static/logo.png" mode="widthFix"></image>
+			                    </view>
+			                    <view class="uni-comment-body">
+			                        <view class="uni-comment-top">
+			                            <text>马克一天</text>
+			                        </view>
+			                        <view class="uni-comment-content">很强大，厉害了我的uni-app!</view>
+			                    </view>
+			                </view>
+			                <view class="uni-comment-list">
+			                    <view class="uni-comment-face">
+			                      <image src="../../static/logo.png" mode="widthFix"></image>
+			                    </view>
+			                    <view class="uni-comment-body">
+			                        <view class="uni-comment-top">
+			                            <text>今生缘</text>
+			                        </view>
+			                        <view class="uni-comment-content">好牛逼的感觉，是不是小程序、App、移动端都互通了？</view>
+			                        </view>
+			                    </view>
+			                </view>
+			                <view class="uni-comment-list">
+			                    <view class="uni-comment-face">
+			                      <image src="../../static/logo.png" mode="widthFix"></image>
+			                    </view>
+								<view class="uni-comment-body">
+								    <view class="uni-comment-top">
+								        <text>小猫咪</text>
+								    </view>
+								    <view class="uni-comment-content">支持国产，支持DCloud!</view>
+								</view>
+							</view>
+							<view class="uni-comment-list">
+							    <view class="uni-comment-face">
+							      <image src="../../static/logo.png" mode="widthFix"></image>
+							    </view>
+								<view class="uni-comment-body">
+								    <view class="uni-comment-top">
+								        <text>小猫咪</text>
+								    </view>
+								    <view class="uni-comment-content">支持国产，支持DCloud!</view>
+								</view>
+							</view>
+							<view class="uni-comment-list">
+							    <view class="uni-comment-face">
+							       <image src="../../static/logo.png" mode="widthFix"></image>
+							    </view>
+								<view class="uni-comment-body">
+								    <view class="uni-comment-top">
+								        <text>小猫咪</text>
+								    </view>
+								    <view class="uni-comment-content">支持国产，支持DCloud!</view>
+								</view>
+							</view>
+								</view>
+			                </view>
+			            </view>
+			        </view>
 	    </view>
 		
 
@@ -67,7 +108,7 @@
 <style lang="scss">
 .chat-container{
 	position: relative;
-	height: 1025px;
+	height: 925px;
 	background-color: #dfeae9;
 	overflow: hidden;
 }
@@ -128,12 +169,14 @@
 .chat-container .chat-input{
 	position: absolute;
 	width: 425px;
-	height: 550px;
+	height: 575px; /* Adjust the height as needed */
 	left: 5.27%;
 	right: 5.06%;
 	top: 334px;
 	bottom: 25.37%;
 	background-color: #f5f8f8;
+	overflow: hidden;
+    
 }
 
 .chat-container .chat-input .message-box {
@@ -172,38 +215,61 @@
 	text-align: center;
 }
 // 留言显示
-.chat-container .chat-input .fetched-messages {
-	margin: 10px 0;
-	// height: 100px;
-	width: 425px;
-	 overflow-y: auto; /* Enable vertical scrolling */
-	// border: 1px solid #ccc; //测试范围
-	
+.uni-padding-wrap {
+    /* Update as needed */
+    padding: 10rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
-.chat-container .chat-input .fetched-messages .message {
-  display: flex;
-	align-items: left;
-	justify-content: center;
-  height: 300px;
+    .uni-comment {
+        padding: 5rpx 0;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    }
 
-  // background-color: skyblue;
-	flex-direction: column; /* 将内容垂直排列 */
-	text-align: left; /* 文本居中 */
-}
-.chat-container .chat-input .fetched-messages .message ul li{
-	padding-bottom: 30px;
-	padding-left: 60px;
+    .uni-comment-list {
+        flex-wrap: nowrap;
+        padding: 10rpx 0;
+        margin: 10rpx 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .uni-comment-face {
+        width: 70upx;
+        height: 70upx;
+        border-radius: 100%;
+        margin-right: 20upx;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .uni-comment-face image {
+        width: 100%;
+        border-radius: 100%;
+    }
+
+    .uni-comment-body {
+        width: 100%;
+    }
+
+    .uni-comment-top {
+        line-height: 1.5em;
+        justify-content: space-between;
+    }
+
+    .uni-comment-top text {
+        color: #0A98D5;
+        font-size: 24upx;
+    }
 
 
-}
-
-.chat-container .chat-input .fetched-messages .message .user-id {
-  padding-bottom: 5px;
-  border-radius: 5px;
-}
-.chat-container .chat-input .fetched-messages .message p {
-  margin: 0; /* 移除段落标签的默认间距 */
-}
-
+    .uni-comment-content {
+        line-height: 1.6em;
+        font-size: 28upx;
+        padding: 8rpx 0;
+    }
 
 </style>
