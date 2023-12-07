@@ -14,5 +14,5 @@ public interface BlackEntityService {
      * 查询黑名单
      * @return
      */
-    List<String> getList(String username);
+    List<String> getList();
 }

@@ -24,7 +24,7 @@ public class BlackEntityServiceImpl implements BlackEntityService {
      * @return
      */
     @Override
-    public List<String> getList(String username) {
-        return blackEntityMapper.selectByUsername(username);
+    public List<String> getList() {
+        return blackEntityMapper.selectByUsername();
     }
 }

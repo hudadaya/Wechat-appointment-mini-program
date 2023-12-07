@@ -27,19 +27,14 @@ public class BlackEntityController {
 
     /**
      * 查询黑名单
-     * @param username
      * @return
      */
     @GetMapping("select")
-    public Result<List<String>> select(@RequestParam(required = false) String username){
-        log.info("查询黑名单：" + username);
-        List<String> list = blackEntityService.getList(username);
+    public Result<List<String>> select(){
+        log.info("查询黑名单");
+        List<String> list = blackEntityService.getList();
         if(list.isEmpty()){
-            if(username == null){
-                return Result.success("445", null, "黑名单中暂时没有用户");
-            }else{
-                return Result.success("446", null, "黑名单中搜索不到符合该关键词的用户");
-            }
+            return Result.success("445", null, "查询结果为空，黑名单中暂时没有用户");
         }else{
             return Result.success("241", list, "查询成功");
         }
