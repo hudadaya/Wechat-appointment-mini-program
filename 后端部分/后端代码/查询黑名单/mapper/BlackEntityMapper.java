@@ -15,8 +15,7 @@ public interface BlackEntityMapper {
 
     /**
      * 查询黑名单
-     * @param username
      * @return
      */
-    List<String> selectByUsername(String username);
+    List<String> selectByUsername();
 }

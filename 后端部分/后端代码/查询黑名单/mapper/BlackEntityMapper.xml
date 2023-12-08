@@ -8,11 +8,6 @@
 <!--    查询黑名单-->
     <select id="selectByUsername" resultType="java.lang.String">
         select username from blacklist
-        <where>
-            <if test="username != '' and user != null">
-                username like concat('%', #{username}, '%')
-            </if>
-        </where>
         order by create_time desc
     </select>
 </mapper>
