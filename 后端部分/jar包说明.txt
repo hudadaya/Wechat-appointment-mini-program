@@ -3,4 +3,6 @@
 
 xxx.jar为具体jar包名字。
 
-整合了所有接口的jar包为：demo.jar
+整合了用户端所有接口的jar包为：demo.jar
+
+整合了管理端所有接口的jar包为：black.jar

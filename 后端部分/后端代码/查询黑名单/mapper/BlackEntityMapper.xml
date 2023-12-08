@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace = mapper接口类的全限定名 -->
+<mapper namespace="com.example.blacklist.mapper.BlackEntityMapper">
+
+<!--    查询黑名单-->
+    <select id="selectByUsername" resultType="java.lang.String">
+        select username from blacklist
+        <where>
+            <if test="username != '' and user != null">
+                username like concat('%', #{username}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+</mapper>

@@ -1,0 +1,13 @@
+1. 添加黑名单
+云服务器路由：http://8.134.201.230:8081/blacklist/insert
+本地路由：http://localhost:8081/blacklist/insert
+post方法，需要传入json格式
+
+2. 删除黑名单记录
+云服务器路由：http://localhost:8081/blacklist/delete?username=hhh
+本地路由：http://localhost:8081/blacklist/delete?username=hhh
+最后一个参数前端传入，非路径参数
+
+3. 查询黑名单
+云服务器路由：http://8.134.201.230:8081/blacklist/select
+本地路由：http://localhost:8081/blacklist/select

@@ -1,3 +1,0 @@
-1.提交自己编写的代码,entity,mapper,service（包括serviceimpl)，contoller层的所有代码
-2.提交自己修改过的配置文件（如pom.xml,application.properties等等之类的配置文件），并附文档说明修改的地方，可以添加截图，更加生动形象。
-3.提交自己项目的pom.xml文档
