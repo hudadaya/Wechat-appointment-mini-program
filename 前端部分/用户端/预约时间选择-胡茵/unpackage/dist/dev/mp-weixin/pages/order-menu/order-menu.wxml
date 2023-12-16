@@ -1,0 +1,1 @@
+<view><view class="room _p">{{room}}</view><times vue-id="1cef5d40-1" timeInterval="{{1}}" appointTime="{{appointTime}}" isMultiple="{{true}}" disableTimeSlot="{{disableTimeSlot}}" data-event-opts="{{[['^change',[['getTime']]]]}}" bind:change="__e" bind:__l="__l"></times></view>
