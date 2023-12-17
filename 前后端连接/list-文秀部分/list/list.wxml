@@ -1,9 +1,0 @@
-<!--pages/list/list.wxml-->
-<!-- <text>pages/list/list.wxml</text> -->
-<view class='list-head'>列表测试</view>
-<view class='list-box'>
-    <view class='list-li mflex'  wx:for="{{list_data}}"  wx:key="index" >          
-        <view class='list_title'><text>标题：{{item.title}}</text></view> 
-        <view class='list_content'><text>内容：{{item.content}}</text></view>         
-    </view>
-</view>
