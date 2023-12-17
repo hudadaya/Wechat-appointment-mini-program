@@ -1,0 +1,193 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 留言显示
+ */
+.chat-container{
+	background-color: rgb(225, 224, 246);
+}
+.chat-input{
+	width: 80%;
+	margin-left: 22px;
+}
+.uni-padding-wrap {
+    /* Update as needed */
+    padding: 10rpx;
+    width: 110%;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling */
+	/* background-color: white; */
+}
+.uni-comment {
+        padding: 5rpx 0;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+		background-color: rgb(225, 224, 246);
+		margin-bottom: 30px;
+}
+.uni-comment-list {
+        flex-wrap: nowrap;
+        padding: 10rpx 0;
+        margin: 10rpx 0;
+        width: 100%;
+		height: 120px;
+        display: flex;
+		background-color: white;
+}
+.uni-comment-face {
+        width: 70rpx;
+        height: 70rpx;
+        border-radius: 100%;
+        margin-right: 20rpx;
+        flex-shrink: 0;
+        overflow: hidden;
+		padding-left: 5px;
+}
+.uni-comment-face image {
+        width: 100%;
+        border-radius: 100%;
+}
+.uni-comment-body {
+        width: 100%;
+}
+.uni-comment-top {
+        line-height: 1.5em;
+        justify-content: space-between;
+}
+.uni-comment-top text {
+        color: #0A98D5;
+        font-size: 24rpx;
+}
+.uni-comment-content {
+        line-height: 1.6em;
+        font-size: 28rpx;
+        padding: 8rpx 0;
+}
+.uni-comment-buttons {
+	  display: flex;
+	  justify-content: space-between;
+	  margin-top: 10px;
+}
+.uni-comment-button1 {
+	  /* padding: 8px 16px; */
+	  border: none;
+	  border-radius: 4px;
+	  background-color: rgb(245, 108, 108);
+	  color: white;
+	  font-size: 14px;
+	  height: 40rpx;
+	  width: 100px;
+	  line-height: 20px;
+	  cursor: pointer;
+	  transition: background-color 0.3s ease;
+}
+.uni-comment-button2 {
+
+	  border: none;
+	  border-radius: 4px;
+	  background-color: rgb(101, 217, 105);
+	  color: white;
+	  font-size: 14px;
+	  height: 40rpx;
+	  width: 100px;
+	  line-height: 20px;
+	  cursor: pointer;
+	  transition: background-color 0.3s ease;
+}
+.uni-comment-button:hover {
+	  background-color: #077DAE;
+}
+	
+
+

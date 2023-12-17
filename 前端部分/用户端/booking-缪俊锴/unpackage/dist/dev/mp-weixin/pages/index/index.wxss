@@ -1,0 +1,23 @@
+
+.background {
+	background-color: #ffffff;
+}
+.box{
+	color: white;
+	width: 260px;
+	height: 150px;
+	background-color: #83c6c2;
+	margin: auto;
+	margin-top:20px;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 70rpx;
+	font-size:10px;
+}
+.button{
+	height:50rpx;
+	width: 150rpx;
+	color: black;
+	font-size: 20rpx;
+}
+

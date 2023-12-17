@@ -1,0 +1,15 @@
+{
+    "id": "pretty-timespicker",
+    "displayName": "预约时间选择器",
+    "version": "4.1.0",
+    "description": "用于预约时间的选择器，显示被占用的时间，支持多选、单选、选择一个时间段",
+    "keywords": [
+        "时间，选择器，预约，日期"
+    ],
+    "dcloudext": {
+        "category": [
+            "uni-app前端模板",
+            "前端页面模板"
+        ]
+    }
+}
