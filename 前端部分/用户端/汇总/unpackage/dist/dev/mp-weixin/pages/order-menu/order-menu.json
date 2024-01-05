@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "预约页面",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "times": "/components/pretty-times/pretty-times"
-  }
-}

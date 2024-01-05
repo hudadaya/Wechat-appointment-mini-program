@@ -1,1 +1,0 @@
-<view class="container _div"><view class="_h1">留言板</view><block wx:for="{{messages}}" wx:for-item="message" wx:for-index="index" wx:key="index"><view class="message _div"><view class="_p">{{message.text}}</view><view class="date _p">{{message.date}}</view></view></block></view>

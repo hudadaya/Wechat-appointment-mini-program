@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 样式文件中添加样式 */
+.title-bar {
+  height: 60px;
+  line-height: 60px;
+  background-color: 000000;
+  color: white;
+  text-align: center;
+}
+.container {
+  margin-left: 20rpx;
+  /* 左侧间距 */
+  margin-right: 20rpx;
+  /* 右侧间距 */
+  margin-top: 20px;
+  /* 设置容器顶部的间距为20像素 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* 大框的边框 */
+}
+.title-text {
+  font-size: 24px;
+  color: black;
+}
+.scroll-view {
+  padding: 10px;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  /* 设置按钮垂直排列 */
+  padding: 10px;
+}
+.button-title {
+  text-align: center;
+  /* 水平居中 */
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;
+  margin-bottom: 20rpx;
+  /* 设置文本下方的间距为20像素 */
+}
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.button-row {
+  width: 100%;
+  /* 让每行占满父容器 */
+  display: flex;
+  justify-content: flex-start;
+}
+.user-button {
+  width: 23%;
+  /* 每个按钮所占宽度 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  /* 按钮之间的底部间距 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-label {
+  font-size: 42rpx;
+  /* 提示文字大小 */
+  padding-left: 80rpx;
+  /* 左边距 */
+  color: #333;
+  margin-bottom: 100rpx;
+  /* 提示文字和输入框之间的间距 */
+  font-weight: bold;
+  /* 设置为粗体 */
+}
+.input-field {
+  margin-top: 50rpx;
+  padding: 10rpx;
+  /* 输入框内边距 */
+  border-radius: 6rpx;
+  /* 输入框圆角 */
+  border: 1rpx solid #ccc;
+  /* 输入框边框 */
+  border-bottom: 1rpx solid #ccc;
+  /* 只显示底部边框 */
+  width: 100%;
+  /* 输入框宽度 */
+  width: 80%;
+  /* 设置宽度为页面宽度的80%，留出左右各10%的空白 */
+  margin-left: 10%;
+  /* 左边距10% */
+  margin-right: 10%;
+  /* 右边距10% */
+  position: relative;
+  z-index: 1;
+}
+.bl-button {
+  margin-top: 40rpx;
+  margin-bottom: 100rpx;
+  /* 提示文字和输入框之间的间距 */
+  width: 40%;
+  /* 设置宽度为页面宽度的30%，留出左右各8%的空白 */
+  margin-left: 30%;
+  /* 左边距35% */
+  margin-right: 8%;
+  /* 右边距8% */
+  height: 60rpx;
+  border-radius: 40rpx;
+  /* 圆角半径增加到20rpx */
+  background-color: #A6A0F8;
+  /* 紫色 */
+  color: white;
+  font-size: 16rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  border: none;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 半透明遮罩层 */
+  z-index: 999;
+  /* 设置遮罩层的层级 */
+  pointer-events: auto;
+  /* 阻止用户点击遮罩层下的元素 */
+}
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal-content {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.modal .modal-content .top-content {
+  margin-bottom: 20px;
+  /* 上部内容和中部内容之间的间距 */
+}
+.modal .modal-content .middle-content {
+  margin-bottom: 20px;
+  /* 中部内容和下部内容之间的间距 */
+}
+.modal .modal-content .bottom-content {
+  display: flex;
+  justify-content: space-between;
+}
+.modal .modal-content .confirm-bottom {
+  margin-top: 20rpx;
+  width: 84%;
+  /* 设置宽度为页面宽度的84%，留出左右各8%的空白 */
+  margin-left: 8%;
+  /* 左边距8% */
+  margin-right: 8%;
+  /* 右边距8% */
+  height: 60rpx;
+  border-radius: 40rpx;
+  /* 圆角半径增加到20rpx */
+  background-color: #3498db;
+  color: white;
+  font-size: 16rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  border: none;
+  z-index: 1001;
+}
+.modal .modal-content .cancel-bottom {
+  margin-top: 20rpx;
+  width: 84%;
+  /* 设置宽度为页面宽度的84%，留出左右各8%的空白 */
+  margin-left: 8%;
+  /* 左边距8% */
+  margin-right: 8%;
+  /* 右边距8% */
+  height: 60rpx;
+  border-radius: 40rpx;
+  /* 圆角半径增加到20rpx */
+  background-color: #e74c3c;
+  color: white;
+  font-size: 16rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  border: none;
+  z-index: 1001;
+}
+

@@ -1,0 +1,1 @@
+<view><view class="box"><navigator url="/pages/order-menu/order-menu" open-type="navigate">教室预约</navigator></view><view class="box"><navigator url="/pages/order-menu/order-menu" open-type="navigate">实验室预约</navigator></view><view class="box"><navigator url="/pages/order-seminar/order-meetingroom" open-type="navigate">研讨室预约</navigator></view></view>
